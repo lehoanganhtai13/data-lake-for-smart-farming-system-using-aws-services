@@ -1,0 +1,8 @@
+{
+    "Resource": {
+        "Database": {
+            "Name": "datalake-db"
+        }
+    },
+    "Permissions": ["ALTER", "CREATE_TABLE"]
+}

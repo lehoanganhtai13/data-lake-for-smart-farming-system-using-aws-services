@@ -1,0 +1,6 @@
+{
+  "DataLakeSettings": {
+    "CreateDatabaseDefaultPermissions": [],
+    "CreateTableDefaultPermissions": []
+  }
+}

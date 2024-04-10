@@ -1,0 +1,9 @@
+{
+    "Resource": {
+        "Table": {
+                "DatabaseName": "datalake-db",
+                "Name": "data"
+            }
+    },
+    "Permissions": ["SELECT"]
+}

@@ -1,0 +1,40 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iot:Publish",
+        "iot:Receive",
+        "iot:PublishRetain"
+      ],
+      "Resource": [
+        "arn:aws:iot:ap-southeast-1:<accountd-id>:topic/sdk/test/java",
+        "arn:aws:iot:ap-southeast-1:<accountd-id>:topic/smart_farming_demo",
+        "arn:aws:iot:ap-southeast-1:<accountd-id>:topic/sdk/test/js"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iot:Subscribe"
+      ],
+      "Resource": [
+        "arn:aws:iot:ap-southeast-1:<accountd-id>:topicfilter/sdk/test/java",
+        "arn:aws:iot:ap-southeast-1:<accountd-id>:topicfilter/smart_farming_demo",
+        "arn:aws:iot:ap-southeast-1:<accountd-id>:topicfilter/sdk/test/js"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iot:Connect"
+      ],
+      "Resource": [
+        "arn:aws:iot:ap-southeast-1:<accountd-id>:client/sdk-java",
+        "arn:aws:iot:ap-southeast-1:<accountd-id>:client/basicPubSub",
+        "arn:aws:iot:ap-southeast-1:<accountd-id>:client/sdk-nodejs-*"
+      ]
+    }
+  ]
+}
